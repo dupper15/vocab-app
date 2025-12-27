@@ -1,0 +1,68 @@
+import type { VocabTopic } from '../vocabulary'
+
+export const part1Topics: VocabTopic[] = [
+  {
+    id: 'hometown',
+    name: 'Hometown',
+    words: [
+      { vietnamese: 'quê hương', english: 'hometown' },
+      { vietnamese: 'thành phố', english: 'city' },
+      { vietnamese: 'nông thôn', english: 'countryside' },
+      { vietnamese: 'láng giềng', english: 'neighborhood' },
+      { vietnamese: 'dân số', english: 'population' },
+      { vietnamese: 'giao thông', english: 'traffic' },
+      { vietnamese: 'cộng đồng', english: 'community' },
+      { vietnamese: 'địa phương', english: 'local' },
+      { vietnamese: 'phát triển', english: 'develop' },
+      { vietnamese: 'truyền thống', english: 'traditional' },
+    ],
+  },
+  {
+    id: 'work-study',
+    name: 'Work & Study',
+    words: [
+      { vietnamese: 'công việc', english: 'work' },
+      { vietnamese: 'nghề nghiệp', english: 'career' },
+      { vietnamese: 'văn phòng', english: 'office' },
+      { vietnamese: 'đồng nghiệp', english: 'colleague' },
+      { vietnamese: 'chuyên ngành', english: 'major' },
+      { vietnamese: 'bằng cấp', english: 'degree' },
+      { vietnamese: 'kỹ năng', english: 'skill' },
+      { vietnamese: 'kinh nghiệm', english: 'experience' },
+      { vietnamese: 'trách nhiệm', english: 'responsibility' },
+      { vietnamese: 'thăng tiến', english: 'promotion' },
+    ],
+  },
+  {
+    id: 'hobbies',
+    name: 'Hobbies',
+    words: [
+      { vietnamese: 'sở thích', english: 'hobby' },
+      { vietnamese: 'thời gian rảnh', english: 'free time' },
+      { vietnamese: 'thư giãn', english: 'relax' },
+      { vietnamese: 'giải trí', english: 'entertainment' },
+      { vietnamese: 'đọc sách', english: 'reading' },
+      { vietnamese: 'âm nhạc', english: 'music' },
+      { vietnamese: 'thể thao', english: 'sport' },
+      { vietnamese: 'du lịch', english: 'travel' },
+      { vietnamese: 'nấu ăn', english: 'cooking' },
+      { vietnamese: 'nhiếp ảnh', english: 'photography' },
+    ],
+  },
+  {
+    id: 'daily-routine',
+    name: 'Daily Routine',
+    words: [
+      { vietnamese: 'thói quen', english: 'routine' },
+      { vietnamese: 'buổi sáng', english: 'morning' },
+      { vietnamese: 'buổi tối', english: 'evening' },
+      { vietnamese: 'thức dậy', english: 'wake up' },
+      { vietnamese: 'ăn sáng', english: 'breakfast' },
+      { vietnamese: 'đi làm', english: 'go to work' },
+      { vietnamese: 'tập thể dục', english: 'exercise' },
+      { vietnamese: 'đi ngủ', english: 'go to bed' },
+      { vietnamese: 'lịch trình', english: 'schedule' },
+      { vietnamese: 'bận rộn', english: 'busy' },
+    ],
+  },
+]

@@ -1,0 +1,68 @@
+import type { VocabTopic } from '../vocabulary'
+
+export const task1Topics: VocabTopic[] = [
+  {
+    id: 'graph-description',
+    name: 'Graph Description',
+    words: [
+      { vietnamese: 'biểu đồ', english: 'chart' },
+      { vietnamese: 'tăng', english: 'increase' },
+      { vietnamese: 'giảm', english: 'decrease' },
+      { vietnamese: 'dao động', english: 'fluctuate' },
+      { vietnamese: 'xu hướng', english: 'trend' },
+      { vietnamese: 'đỉnh cao', english: 'peak' },
+      { vietnamese: 'thấp nhất', english: 'lowest point' },
+      { vietnamese: 'ổn định', english: 'remain stable' },
+      { vietnamese: 'đáng kể', english: 'significant' },
+      { vietnamese: 'nhẹ', english: 'slight' },
+    ],
+  },
+  {
+    id: 'comparison',
+    name: 'Comparison',
+    words: [
+      { vietnamese: 'so sánh', english: 'compare' },
+      { vietnamese: 'tương tự', english: 'similar' },
+      { vietnamese: 'khác biệt', english: 'different' },
+      { vietnamese: 'cao hơn', english: 'higher' },
+      { vietnamese: 'thấp hơn', english: 'lower' },
+      { vietnamese: 'nhiều hơn', english: 'more' },
+      { vietnamese: 'ít hơn', english: 'less' },
+      { vietnamese: 'gấp đôi', english: 'double' },
+      { vietnamese: 'ngang bằng', english: 'equal' },
+      { vietnamese: 'vượt trội', english: 'exceed' },
+    ],
+  },
+  {
+    id: 'numbers-data',
+    name: 'Numbers & Data',
+    words: [
+      { vietnamese: 'tỷ lệ phần trăm', english: 'percentage' },
+      { vietnamese: 'tỷ lệ', english: 'proportion' },
+      { vietnamese: 'số liệu', english: 'figure' },
+      { vietnamese: 'dữ liệu', english: 'data' },
+      { vietnamese: 'con số', english: 'number' },
+      { vietnamese: 'khoảng', english: 'approximately' },
+      { vietnamese: 'chính xác', english: 'exactly' },
+      { vietnamese: 'chiếm', english: 'account for' },
+      { vietnamese: 'đại diện', english: 'represent' },
+      { vietnamese: 'ước tính', english: 'estimate' },
+    ],
+  },
+  {
+    id: 'time-periods',
+    name: 'Time Periods',
+    words: [
+      { vietnamese: 'khoảng thời gian', english: 'period' },
+      { vietnamese: 'giai đoạn', english: 'phase' },
+      { vietnamese: 'thập kỷ', english: 'decade' },
+      { vietnamese: 'hàng năm', english: 'annually' },
+      { vietnamese: 'hàng tháng', english: 'monthly' },
+      { vietnamese: 'ban đầu', english: 'initially' },
+      { vietnamese: 'cuối cùng', english: 'finally' },
+      { vietnamese: 'trong suốt', english: 'throughout' },
+      { vietnamese: 'sau đó', english: 'subsequently' },
+      { vietnamese: 'trước đó', english: 'previously' },
+    ],
+  },
+]

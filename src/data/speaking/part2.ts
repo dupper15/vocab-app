@@ -1,0 +1,68 @@
+import type { VocabTopic } from '../vocabulary'
+
+export const part2Topics: VocabTopic[] = [
+  {
+    id: 'person',
+    name: 'Describe a Person',
+    words: [
+      { vietnamese: 'tính cách', english: 'personality' },
+      { vietnamese: 'ngoại hình', english: 'appearance' },
+      { vietnamese: 'tốt bụng', english: 'kind' },
+      { vietnamese: 'hào phóng', english: 'generous' },
+      { vietnamese: 'thông minh', english: 'intelligent' },
+      { vietnamese: 'kiên nhẫn', english: 'patient' },
+      { vietnamese: 'tự tin', english: 'confident' },
+      { vietnamese: 'khiêm tốn', english: 'modest' },
+      { vietnamese: 'đáng tin cậy', english: 'reliable' },
+      { vietnamese: 'năng động', english: 'energetic' },
+    ],
+  },
+  {
+    id: 'place',
+    name: 'Describe a Place',
+    words: [
+      { vietnamese: 'vị trí', english: 'location' },
+      { vietnamese: 'phong cảnh', english: 'scenery' },
+      { vietnamese: 'kiến trúc', english: 'architecture' },
+      { vietnamese: 'không khí', english: 'atmosphere' },
+      { vietnamese: 'yên tĩnh', english: 'peaceful' },
+      { vietnamese: 'đông đúc', english: 'crowded' },
+      { vietnamese: 'rộng rãi', english: 'spacious' },
+      { vietnamese: 'ấn tượng', english: 'impressive' },
+      { vietnamese: 'tuyệt đẹp', english: 'stunning' },
+      { vietnamese: 'độc đáo', english: 'unique' },
+    ],
+  },
+  {
+    id: 'event',
+    name: 'Describe an Event',
+    words: [
+      { vietnamese: 'sự kiện', english: 'event' },
+      { vietnamese: 'dịp đặc biệt', english: 'special occasion' },
+      { vietnamese: 'kỷ niệm', english: 'memorable' },
+      { vietnamese: 'lễ kỷ niệm', english: 'celebration' },
+      { vietnamese: 'tổ chức', english: 'organize' },
+      { vietnamese: 'tham dự', english: 'attend' },
+      { vietnamese: 'thú vị', english: 'exciting' },
+      { vietnamese: 'khó quên', english: 'unforgettable' },
+      { vietnamese: 'ấn tượng sâu sắc', english: 'impressive' },
+      { vietnamese: 'vui vẻ', english: 'enjoyable' },
+    ],
+  },
+  {
+    id: 'object',
+    name: 'Describe an Object',
+    words: [
+      { vietnamese: 'đồ vật', english: 'object' },
+      { vietnamese: 'vật dụng', english: 'item' },
+      { vietnamese: 'hữu ích', english: 'useful' },
+      { vietnamese: 'giá trị', english: 'valuable' },
+      { vietnamese: 'chức năng', english: 'function' },
+      { vietnamese: 'thiết kế', english: 'design' },
+      { vietnamese: 'chất lượng', english: 'quality' },
+      { vietnamese: 'tiện lợi', english: 'convenient' },
+      { vietnamese: 'hiện đại', english: 'modern' },
+      { vietnamese: 'bền', english: 'durable' },
+    ],
+  },
+]
