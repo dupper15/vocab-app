@@ -1,0 +1,33 @@
+import type { VocabWord } from '../../vocabulary'
+
+export const test4Vocab: Array<VocabWord> = [
+  { vietnamese: 'lương thực chính, chủ yếu', english: 'staple' },
+  { vietnamese: 'sâu bọ gây hại, dịch hại', english: 'pests' },
+  { vietnamese: 'tự cung tự cấp', english: 'subsistence' },
+  { vietnamese: 'lúa nước, ruộng lúa', english: 'paddy' },
+  { vietnamese: 'tiệc tùng linh đình', english: 'feasting' },
+  { vietnamese: 'kiếm ăn (hái lượm, săn bắt)', english: 'foraging' },
+  { vietnamese: 'dễ bị, dễ tổn thương', english: 'susceptible' },
+  { vietnamese: 'sự xâm nhập (của sâu bọ)', english: 'infestations' },
+  { vietnamese: 'tài sản, của cải', english: 'possessions' },
+  { vietnamese: 'bối rối, khó hiểu', english: 'puzzled' },
+  { vietnamese: 'tầm thường, xoàng xĩnh', english: 'mediocre' },
+  { vietnamese: 'bị kìm hãm, bị bóp nghẹt', english: 'stifled' },
+  { vietnamese: 'khiển trách nặng nề', english: 'chastised' },
+  { vietnamese: 'khiển trách, quở trách', english: 'reprimanded' },
+  { vietnamese: 'triệu tập', english: 'summoned' },
+  { vietnamese: 'người hầu, người phục vụ', english: 'servant' },
+  { vietnamese: 'sự thách thức, chống đối', english: 'defiance' },
+  { vietnamese: 'làm suy yếu, phá hoại ngầm', english: 'undermined' },
+  { vietnamese: 'tiêu chuẩn cao', english: 'a high bar' },
+  { vietnamese: 'sự yêu thích, niềm yêu mến', english: 'fondness' },
+  { vietnamese: 'đồng thời', english: 'simultaneously' },
+  { vietnamese: 'tài năng, kỹ năng xuất sắc', english: 'prowess' },
+  { vietnamese: 'giải đấu', english: 'tournament' },
+  {
+    vietnamese: 'người chưa có kinh nghiệm, chưa biết gì',
+    english: 'uninitiated',
+  },
+  { vietnamese: 'tốn kém, hao tổn', english: 'taxing' },
+  { vietnamese: 'rời rạc, không đồng đều', english: 'patchy' },
+]

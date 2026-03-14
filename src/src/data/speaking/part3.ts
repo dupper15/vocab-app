@@ -1,0 +1,68 @@
+import type { VocabTopic } from '../vocabulary'
+
+export const part3Topics: Array<VocabTopic> = [
+  {
+    id: 'education',
+    name: 'Education',
+    words: [
+      { vietnamese: 'hệ thống giáo dục', english: 'education system' },
+      { vietnamese: 'chương trình học', english: 'curriculum' },
+      { vietnamese: 'phương pháp giảng dạy', english: 'teaching method' },
+      { vietnamese: 'học trực tuyến', english: 'online learning' },
+      { vietnamese: 'học suốt đời', english: 'lifelong learning' },
+      { vietnamese: 'kỹ năng thực tế', english: 'practical skills' },
+      { vietnamese: 'tư duy phản biện', english: 'critical thinking' },
+      { vietnamese: 'học thuật', english: 'academic' },
+      { vietnamese: 'nghiên cứu', english: 'research' },
+      { vietnamese: 'đổi mới giáo dục', english: 'educational reform' },
+    ],
+  },
+  {
+    id: 'environment',
+    name: 'Environment',
+    words: [
+      { vietnamese: 'biến đổi khí hậu', english: 'climate change' },
+      { vietnamese: 'ô nhiễm môi trường', english: 'environmental pollution' },
+      { vietnamese: 'phát thải khí', english: 'emission' },
+      { vietnamese: 'năng lượng tái tạo', english: 'renewable energy' },
+      { vietnamese: 'bảo tồn', english: 'conservation' },
+      { vietnamese: 'đa dạng sinh học', english: 'biodiversity' },
+      { vietnamese: 'phá rừng', english: 'deforestation' },
+      { vietnamese: 'giảm thiểu', english: 'reduce' },
+      { vietnamese: 'ý thức môi trường', english: 'environmental awareness' },
+      { vietnamese: 'trách nhiệm', english: 'responsibility' },
+    ],
+  },
+  {
+    id: 'technology',
+    name: 'Technology',
+    words: [
+      { vietnamese: 'tiến bộ công nghệ', english: 'technological advancement' },
+      { vietnamese: 'kỷ nguyên số', english: 'digital age' },
+      { vietnamese: 'trí tuệ nhân tạo', english: 'artificial intelligence' },
+      { vietnamese: 'tự động hóa', english: 'automation' },
+      { vietnamese: 'ảnh hưởng xã hội', english: 'social impact' },
+      { vietnamese: 'an ninh mạng', english: 'cybersecurity' },
+      { vietnamese: 'quyền riêng tư', english: 'privacy' },
+      { vietnamese: 'đổi mới sáng tạo', english: 'innovation' },
+      { vietnamese: 'phụ thuộc công nghệ', english: 'technology dependence' },
+      { vietnamese: 'khoảng cách số', english: 'digital divide' },
+    ],
+  },
+  {
+    id: 'society',
+    name: 'Society',
+    words: [
+      { vietnamese: 'xu hướng xã hội', english: 'social trend' },
+      { vietnamese: 'thế hệ', english: 'generation' },
+      { vietnamese: 'giá trị truyền thống', english: 'traditional value' },
+      { vietnamese: 'toàn cầu hóa', english: 'globalization' },
+      { vietnamese: 'đô thị hóa', english: 'urbanization' },
+      { vietnamese: 'bất bình đẳng', english: 'inequality' },
+      { vietnamese: 'phúc lợi xã hội', english: 'social welfare' },
+      { vietnamese: 'cộng đồng', english: 'community' },
+      { vietnamese: 'phát triển bền vững', english: 'sustainable development' },
+      { vietnamese: 'chất lượng cuộc sống', english: 'quality of life' },
+    ],
+  },
+]
