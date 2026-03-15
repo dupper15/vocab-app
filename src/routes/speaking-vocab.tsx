@@ -11,8 +11,8 @@ function SpeakingVocab() {
       title="Speaking Vocabulary"
       emoji="💬"
       description="Master essential speaking vocabulary for IELTS"
-      bgGradient="bg-gradient-to-br from-purple-50 via-pink-50 to-purple-100"
-      accentColor="text-purple-600"
+      gradientColors="linear-gradient(-45deg, #7c3aed, #ec4899, #a855f7, #d946ef)"
+      primaryColor="#7c3aed"
       viewRoute="/speaking-vocab/view"
       testRoute="/speaking-vocab/test"
     />

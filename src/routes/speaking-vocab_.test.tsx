@@ -15,14 +15,8 @@ function SpeakingVocabTest() {
       backText="Back to Speaking Vocab"
       title="Speaking Vocab Test"
       emoji="💬"
-      bgGradient="bg-gradient-to-br from-purple-50 via-pink-50 to-purple-100"
-      accentColor="text-purple-600"
-      buttonBgColor="bg-purple-600"
-      buttonHoverBgColor="hover:bg-purple-700"
-      ringColor="focus:ring-purple-300"
-      borderColor="border-purple-600"
-      hoverBorderColor="hover:border-purple-600"
-      bgLightColor="bg-purple-50"
+      gradientColors="linear-gradient(-45deg, #7c3aed, #ec4899, #a855f7, #d946ef)"
+      primaryColor="#7c3aed"
       sectionLabel="Part"
       sections={[
         {

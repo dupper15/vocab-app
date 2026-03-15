@@ -4,8 +4,8 @@ interface VocabSelectionLayoutProps {
   title: string
   emoji: string
   description?: string
-  bgGradient: string
-  accentColor: string
+  gradientColors: string
+  primaryColor: string
   viewRoute: string
   testRoute: string
 }
@@ -14,104 +14,113 @@ export function VocabSelectionLayout({
   title,
   emoji,
   description = 'Choose your practice method',
-  bgGradient,
-  accentColor,
+  gradientColors,
+  primaryColor,
   viewRoute,
   testRoute,
 }: VocabSelectionLayoutProps) {
   return (
-    <div className={`min-h-screen ${bgGradient} p-4`}>
-      <div className="max-w-4xl mx-auto py-8">
+    <div
+      className="min-h-screen p-4 relative overflow-hidden"
+      style={{
+        background: gradientColors,
+        backgroundSize: '400% 400%',
+        animation: 'gradient 15s ease infinite',
+      }}
+    >
+      {/* Hình nền trang trí */}
+      <div className="absolute inset-0 opacity-10">
+        <div
+          className="absolute top-10 left-10 w-32 h-32 bg-white rounded-full animate-bounce"
+          style={{ animationDelay: '0s', animationDuration: '3s' }}
+        ></div>
+        <div
+          className="absolute top-40 right-20 w-24 h-24 bg-white rounded-full animate-bounce"
+          style={{ animationDelay: '1s', animationDuration: '4s' }}
+        ></div>
+        <div
+          className="absolute bottom-20 left-1/4 w-40 h-40 bg-white rounded-full animate-bounce"
+          style={{ animationDelay: '2s', animationDuration: '5s' }}
+        ></div>
+        <div
+          className="absolute bottom-40 right-1/3 w-28 h-28 bg-white rounded-full animate-bounce"
+          style={{ animationDelay: '1.5s', animationDuration: '3.5s' }}
+        ></div>
+      </div>
+
+      <div className="max-w-4xl mx-auto py-8 relative z-10">
         <Link
           to="/"
-          className="inline-flex items-center text-gray-600 hover:text-gray-900 mb-8 transition-colors"
+          className="inline-flex items-center text-white font-bold text-lg hover:scale-110 transition-transform mb-6 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-xl hover:bg-white/30"
         >
-          <svg
-            className="w-5 h-5 mr-2"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M10 19l-7-7m0 0l7-7m-7 7h18"
-            />
-          </svg>
-          Back to Menu
+          ← Back to Menu
         </Link>
 
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 animate-fade-in">
           <div className="text-7xl mb-4 animate-bounce">{emoji}</div>
-          <h1 className="text-5xl font-bold text-gray-800 mb-3 tracking-tight">
+          <h1
+            className="text-5xl font-bold mb-3 tracking-tight drop-shadow-lg"
+            style={{
+              color: 'white',
+              textShadow:
+                '2px 2px 4px rgba(0,0,0,0.3), 0 0 30px rgba(255,255,255,0.5)',
+            }}
+          >
             {title}
           </h1>
-          <p className="text-lg text-gray-600">{description}</p>
+          <p className="text-2xl text-white font-semibold drop-shadow-md">
+            {description}
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <Link
             to={viewRoute}
-            className="bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 p-10 text-center group hover:scale-105 border-2 border-transparent hover:border-gray-100"
+            className="bg-white/95 backdrop-blur-md rounded-3xl shadow-2xl hover:shadow-2xl transition-all duration-300 p-10 text-center group hover:scale-110 transform border-2"
+            style={{ borderColor: `${primaryColor}40` }}
           >
-            <div className="text-7xl mb-6 transition-transform group-hover:scale-110">
+            <div className="text-7xl mb-6 transition-transform group-hover:scale-125 group-hover:rotate-6">
               📚
             </div>
             <h2
-              className={`text-3xl font-bold text-gray-800 mb-3 group-hover:${accentColor} transition-colors`}
+              className="text-3xl font-bold mb-3 transition-colors drop-shadow-sm"
+              style={{ color: primaryColor }}
             >
               View Vocabulary
             </h2>
-            <p className="text-gray-600 text-lg">Browse and learn new words</p>
-            <div className="mt-6 inline-flex items-center text-sm font-medium text-gray-500 group-hover:text-gray-700">
-              Start Learning
-              <svg
-                className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
+            <p className="text-gray-600 text-lg font-medium">
+              Browse and learn new words
+            </p>
+            <div
+              className="mt-6 inline-flex items-center text-sm font-bold transition-transform group-hover:translate-x-2"
+              style={{ color: primaryColor }}
+            >
+              Start Learning →
             </div>
           </Link>
 
           <Link
             to={testRoute}
-            className="bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 p-10 text-center group hover:scale-105 border-2 border-transparent hover:border-gray-100"
+            className="bg-white/95 backdrop-blur-md rounded-3xl shadow-2xl hover:shadow-2xl transition-all duration-300 p-10 text-center group hover:scale-110 transform border-2"
+            style={{ borderColor: `${primaryColor}40` }}
           >
-            <div className="text-7xl mb-6 transition-transform group-hover:scale-110">
+            <div className="text-7xl mb-6 transition-transform group-hover:scale-125 group-hover:rotate-6">
               ✍️
             </div>
             <h2
-              className={`text-3xl font-bold text-gray-800 mb-3 group-hover:${accentColor} transition-colors`}
+              className="text-3xl font-bold mb-3 transition-colors drop-shadow-sm"
+              style={{ color: primaryColor }}
             >
               Take Test
             </h2>
-            <p className="text-gray-600 text-lg">
+            <p className="text-gray-600 text-lg font-medium">
               Practice with interactive quizzes
             </p>
-            <div className="mt-6 inline-flex items-center text-sm font-medium text-gray-500 group-hover:text-gray-700">
-              Start Testing
-              <svg
-                className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
+            <div
+              className="mt-6 inline-flex items-center text-sm font-bold transition-transform group-hover:translate-x-2"
+              style={{ color: primaryColor }}
+            >
+              Start Testing →
             </div>
           </Link>
         </div>

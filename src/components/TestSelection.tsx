@@ -84,7 +84,7 @@ export default function TestSelection({
           {tests.map((testNum, index) => (
             <Link
               key={testNum}
-              to={`${basePath}/${cambridgeNum}/${testNum}`}
+              to={`${basePath}/${cambridgeNum}/${testNum}` as any}
               className="bg-white rounded-3xl shadow-2xl hover:shadow-2xl hover:scale-110 transition-all duration-300 p-8 text-center transform hover:-translate-y-2"
             >
               <div

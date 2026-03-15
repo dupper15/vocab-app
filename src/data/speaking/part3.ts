@@ -1,6 +1,6 @@
 import type { VocabTopic } from '../vocabulary'
 
-export const part3Topics: VocabTopic[] = [
+export const part3Topics: Array<VocabTopic> = [
   {
     id: 'education',
     name: 'Education',

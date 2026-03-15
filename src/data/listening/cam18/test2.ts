@@ -1,6 +1,6 @@
 import type { VocabWord } from '../../vocabulary'
 
-export const test2Vocab: VocabWord[] = [
+export const test2Vocab: Array<VocabWord> = [
   { vietnamese: 'thư viện', english: 'library' },
   { vietnamese: 'mượn sách', english: 'borrow books' },
   { vietnamese: 'thẻ hội viên', english: 'membership card' },

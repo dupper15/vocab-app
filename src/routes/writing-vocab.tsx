@@ -11,8 +11,8 @@ function WritingVocab() {
       title="Writing Vocabulary"
       emoji="✍️"
       description="Enhance your writing skills with academic vocabulary"
-      bgGradient="bg-gradient-to-br from-blue-50 via-cyan-50 to-blue-100"
-      accentColor="text-blue-600"
+      gradientColors="linear-gradient(-45deg, #3b82f6, #06b6d4, #2563eb, #0ea5e9)"
+      primaryColor="#2563eb"
       viewRoute="/writing-vocab/view"
       testRoute="/writing-vocab/test"
     />

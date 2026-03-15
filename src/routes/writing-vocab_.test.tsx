@@ -14,14 +14,8 @@ function WritingVocabTest() {
       backText="Back to Writing Vocab"
       title="Writing Vocab Test"
       emoji="✍️"
-      bgGradient="bg-gradient-to-br from-blue-50 via-cyan-50 to-blue-100"
-      accentColor="text-blue-600"
-      buttonBgColor="bg-blue-600"
-      buttonHoverBgColor="hover:bg-blue-700"
-      ringColor="focus:ring-blue-300"
-      borderColor="border-blue-600"
-      hoverBorderColor="hover:border-blue-600"
-      bgLightColor="bg-blue-50"
+      gradientColors="linear-gradient(-45deg, #3b82f6, #06b6d4, #2563eb, #0ea5e9)"
+      primaryColor="#2563eb"
       sectionLabel="Task"
       sections={[
         {
