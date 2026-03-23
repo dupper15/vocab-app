@@ -8,9 +8,12 @@ import { routeTree } from './routeTree.gen'
 import './styles.css'
 import reportWebVitals from './reportWebVitals.ts'
 
+const basepath = import.meta.env.BASE_URL.replace(/\/$/, '') || '/'
+
 // Create a new router instance
 const router = createRouter({
   routeTree,
+  basepath,
   context: {},
   defaultPreload: 'intent',
   scrollRestoration: true,
