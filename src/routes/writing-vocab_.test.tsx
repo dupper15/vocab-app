@@ -1,7 +1,7 @@
-import { createFileRoute } from '@tanstack/react-router'
+﻿import { createFileRoute } from '@tanstack/react-router'
 import { VocabTestLayout } from '../components/VocabTestLayout'
-import { task1Topics } from '../data/writing/task1'
-import { task2Topics } from '../data/writing/task2'
+import { task1Topics } from '../../data/writing/task1'
+import { task2Topics } from '../../data/writing/task2'
 
 export const Route = createFileRoute('/writing-vocab_/test')({
   component: WritingVocabTest,

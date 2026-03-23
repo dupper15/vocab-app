@@ -1,19 +1,18 @@
 import { useState } from 'react'
 import { Link } from '@tanstack/react-router'
-import type { VocabTopic } from '../data/vocabulary'
 import {
+  AlignmentType,
   Document,
+  HeadingLevel,
   Packer,
   Paragraph,
-  TextRun,
-  HeadingLevel,
   Table,
   TableCell,
   TableRow,
   WidthType,
-  AlignmentType,
 } from 'docx'
 import { saveAs } from 'file-saver'
+import type { VocabTopic } from '../../data/vocabulary'
 
 type VocabViewLayoutProps<T extends number> = {
   backTo: string
@@ -80,7 +79,7 @@ export function VocabViewLayout<T extends number>({
   // Export to Word
   const exportToWord = async () => {
     if (selectedTopics.size === 0) {
-      alert('Vui lòng chọn ít nhất một topic để xuất file Word')
+      alert('Please select at least one topic to export to Word')
       return
     }
 
@@ -121,8 +120,7 @@ export function VocabViewLayout<T extends number>({
                       new TableCell({
                         children: [
                           new Paragraph({
-                            text: 'Tiếng Việt',
-                            bold: true,
+                            text: 'Vietnamese',
                           }),
                         ],
                         width: { size: 50, type: WidthType.PERCENTAGE },
@@ -137,7 +135,6 @@ export function VocabViewLayout<T extends number>({
                         children: [
                           new Paragraph({
                             text: 'English',
-                            bold: true,
                           }),
                         ],
                         width: { size: 50, type: WidthType.PERCENTAGE },
@@ -334,7 +331,7 @@ export function VocabViewLayout<T extends number>({
                   </button>
                 </div>
               </div>
-              <div className="space-y-2 max-h-[500px] overflow-y-auto pr-2">
+              <div className="space-y-2 max-h-125 overflow-y-auto pr-2">
                 {currentTopics.map((topic) => (
                   <div
                     key={topic.id}
@@ -397,11 +394,11 @@ export function VocabViewLayout<T extends number>({
                   </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-[600px] overflow-y-auto pr-2">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-150 overflow-y-auto pr-2">
                   {selectedTopic.words.map((word, idx) => (
                     <div
                       key={idx}
-                      className="p-5 border-2 rounded-2xl hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-white to-gray-50 transform hover:scale-[1.02]"
+                      className="p-5 border-2 rounded-2xl hover:shadow-xl transition-all duration-300 bg-linear-to-br from-white to-gray-50 transform hover:scale-[1.02]"
                       style={{
                         borderColor: `${primaryColor}40`,
                         animationDelay: `${idx * 0.02}s`,

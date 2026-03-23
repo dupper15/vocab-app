@@ -1,6 +1,6 @@
-import { Link } from '@tanstack/react-router'
+﻿import { Link } from '@tanstack/react-router'
 import { useEffect, useRef, useState } from 'react'
-import type { VocabTopic, VocabWord } from '../data/vocabulary'
+import type { VocabTopic, VocabWord } from '../../data/vocabulary'
 
 interface VocabTestLayoutProps {
   backRoute: string

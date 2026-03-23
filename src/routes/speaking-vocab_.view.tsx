@@ -1,9 +1,9 @@
-import { createFileRoute } from '@tanstack/react-router'
-import { part1Topics } from '../data/speaking/part1'
-import { part2Topics } from '../data/speaking/part2'
-import { part3Topics } from '../data/speaking/part3'
+﻿import { createFileRoute } from '@tanstack/react-router'
+import { part1Topics } from '../../data/speaking/part1'
+import { part2Topics } from '../../data/speaking/part2'
+import { part3Topics } from '../../data/speaking/part3'
 import { VocabViewLayout } from '../components/VocabViewLayout'
-import type { VocabTopic } from '../data/vocabulary'
+import type { VocabTopic } from '../../data/vocabulary'
 
 export const Route = createFileRoute('/speaking-vocab_/view')({
   component: SpeakingVocabView,

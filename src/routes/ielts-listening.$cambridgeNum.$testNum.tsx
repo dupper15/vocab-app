@@ -1,9 +1,9 @@
-import { createFileRoute } from '@tanstack/react-router'
+﻿import { createFileRoute } from '@tanstack/react-router'
 import VocabTest from '../components/VocabTest'
-import { test1Vocab as cam18Test1 } from '../data/listening/cam18/test1'
-import { test2Vocab as cam18Test2 } from '../data/listening/cam18/test2'
-import { test1Vocab as cam19Test1 } from '../data/listening/cam19/test1'
-import { test2Vocab as cam19Test2 } from '../data/listening/cam19/test2'
+import { test1Vocab as cam18Test1 } from '../../data/listening/cam18/test1'
+import { test2Vocab as cam18Test2 } from '../../data/listening/cam18/test2'
+import { test1Vocab as cam19Test1 } from '../../data/listening/cam19/test1'
+import { test2Vocab as cam19Test2 } from '../../data/listening/cam19/test2'
 
 export const Route = createFileRoute('/ielts-listening/$cambridgeNum/$testNum')(
   {

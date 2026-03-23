@@ -1,6 +1,6 @@
-import { Link } from '@tanstack/react-router'
+﻿import { Link } from '@tanstack/react-router'
 import { useEffect, useRef, useState } from 'react'
-import type { VocabWord } from '../data/vocabulary'
+import type { VocabWord } from '../../data/vocabulary'
 // @ts-ignore
 import pdfMake from 'pdfmake/build/pdfmake'
 // @ts-ignore
@@ -175,7 +175,7 @@ export default function VocabTest({
       const typeName = type === 'listening' ? 'Listening' : 'Reading'
 
       // Prepare table body
-      const tableBody = words.map((word, idx) => [
+      const tableBody = words.map((word) => [
         { text: word.english, bold: true },
         word.vietnamese,
       ])
@@ -203,7 +203,7 @@ export default function VocabTest({
               body: [
                 [
                   { text: 'English', style: 'tableHeader' },
-                  { text: 'Tiếng Việt', style: 'tableHeader' },
+                  { text: 'Vietnamese', style: 'tableHeader' },
                 ],
                 ...tableBody,
               ],
@@ -272,7 +272,7 @@ export default function VocabTest({
         .download(`vocabulary-cam${cambridgeNum}-test${testNum}-${date}.pdf`)
     } catch (error) {
       console.error('Error generating PDF:', error)
-      alert('Có lỗi khi tạo PDF. Vui lòng thử lại.')
+      alert('Error generating PDF. Please try again.')
     }
   }
 
