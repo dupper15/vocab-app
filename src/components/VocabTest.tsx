@@ -41,6 +41,7 @@ export default function VocabTest({
   const [userInput, setUserInput] = useState('')
   const [correctCount, setCorrectCount] = useState(0)
   const [isWrong, setIsWrong] = useState(false)
+  const [showAnswer, setShowAnswer] = useState(false)
   const [testCompleted, setTestCompleted] = useState(false)
   const [showVocabList, setShowVocabList] = useState(false)
   const [unknownWords, setUnknownWords] = useState<Array<VocabWord>>([])
@@ -63,6 +64,7 @@ export default function VocabTest({
     setCorrectCount(0)
     setUserInput('')
     setIsWrong(false)
+    setShowAnswer(false)
     setTestCompleted(false)
     setUnknownWords([])
     setIsPracticingUnknown(false)
@@ -87,6 +89,7 @@ export default function VocabTest({
       setCorrectCount((prev) => prev + 1)
       setIsWrong(false)
       setUserInput('')
+      setShowAnswer(false)
 
       if (currentWordIndex < testWords.length - 1) {
         setCurrentWordIndex((prev) => prev + 1)
@@ -109,12 +112,14 @@ export default function VocabTest({
     setCorrectCount(0)
     setUserInput('')
     setIsWrong(false)
+    setShowAnswer(false)
   }
 
   const handleSkip = () => {
     setCorrectCount((prev) => prev + 1)
     setIsWrong(false)
     setUserInput('')
+    setShowAnswer(false)
 
     if (currentWordIndex < testWords.length - 1) {
       setCurrentWordIndex((prev) => prev + 1)
@@ -130,6 +135,7 @@ export default function VocabTest({
     }
     setIsWrong(false)
     setUserInput('')
+    setShowAnswer(false)
 
     if (currentWordIndex < testWords.length - 1) {
       setCurrentWordIndex((prev) => prev + 1)
@@ -147,6 +153,7 @@ export default function VocabTest({
     setCorrectCount(0)
     setUserInput('')
     setIsWrong(false)
+    setShowAnswer(false)
     setIsPracticingUnknown(true)
   }
 
@@ -156,6 +163,7 @@ export default function VocabTest({
     setShowModeModal(true)
     setSelectedMode(null)
     setUnknownWords([])
+    setShowAnswer(false)
     setIsPracticingUnknown(false)
   }
 
@@ -514,6 +522,13 @@ export default function VocabTest({
                   <span className="text-gray-400">|</span>
                   <button
                     type="button"
+                    onClick={() => setShowAnswer((prev) => !prev)}
+                    className="px-4 py-2 rounded-lg font-semibold transition-all hover:scale-105 shadow-md bg-blue-100 text-blue-700 hover:bg-blue-200"
+                  >
+                    {showAnswer ? '🙈 Hide Answer' : '👁️ Show Answer'}
+                  </button>
+                  <button
+                    type="button"
                     onClick={handleMarkAsUnknown}
                     className="px-4 py-2 rounded-lg font-semibold transition-all hover:scale-105 shadow-md bg-orange-100 text-orange-600 hover:bg-orange-200"
                   >
@@ -531,6 +546,27 @@ export default function VocabTest({
                     ⏭️ Skip
                   </button>
                 </div>
+                {showAnswer && (
+                  <div
+                    className="mt-4 text-center p-4 rounded-xl border-2"
+                    style={{
+                      borderColor: `${primaryColor}40`,
+                      backgroundColor: `${primaryColor}10`,
+                    }}
+                  >
+                    <p className="text-sm font-semibold text-gray-600 mb-1">
+                      Correct Answer
+                    </p>
+                    <p
+                      className="text-2xl font-bold"
+                      style={{ color: primaryColor }}
+                    >
+                      {selectedMode === 'en-vi'
+                        ? currentWord.vietnamese
+                        : currentWord.english}
+                    </p>
+                  </div>
+                )}
               </form>
             </div>
           )}
